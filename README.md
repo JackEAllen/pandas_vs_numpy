@@ -17,7 +17,7 @@ Running locally will display two visualisations which can also be seen in the im
 
 The top line plot is GEM spectrum data while the second line plot is of randomly generate data. 
 
-When plotting data using Pandas dataframes, no additional modifications are requered. Optionally for readability, you can add labels to call calumns by name as to numerical index.
+When plotting data using Pandas dataframes, no additional modifications are requered. Optionally for readability, you can add labels to call columns by name as to numerical index.
 
 Plotting using Numpy arrays requires the data to be transposed to rotate the data in order to visualise due to how Numpy arrays are read. You are unable to add labels to these arrays meaning they are less readable. A requirment to understand the data would be needed if Numpy arrays are used.
 
