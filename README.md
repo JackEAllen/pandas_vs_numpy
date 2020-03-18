@@ -15,8 +15,8 @@ Running locally will display two visualisations which can also be seen in the im
 
 ![](visualisation.png)
 
-When plotting data using Pandas dataframes, all the data requires no modification. Optionally for readability, you can add lables to call calumns by name as to index.
+When plotting data using Pandas dataframes, no additional modifications are requered. Optionally for readability, you can add labels to call calumns by name as to numerical index.
 
-Plotting using Numpy arrays requires the data to be transposed to rotate the data in order to visualisee due to how Numpy arrays are read. You are unable to add lable to these arrays meaning they are less readable meaning a requirment to understand the data in the case of bugs occuring will be needed.
+Plotting using Numpy arrays requires the data to be transposed to rotate the data in order to visualise due to how Numpy arrays are read. You are unable to add labels to these arrays meaning they are less readable. A requirment to understand the data would be needed if Numpy arrays are used.
 
-A possible solution to this would be to place each subarray inside hte numpy array inside a dictionary to use the key as a label for reference.
+A possible solution to this would be to place each sub-array inside the numpy array inside a dictionary to use the key as a labels for reference.
