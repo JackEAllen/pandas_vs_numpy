@@ -14,7 +14,7 @@ If you wish to run locally, please install any required dependencies:
 Running locally will display two visualisations which can also be seen in the image below:
 
 
-![](pandas_vs_numpy/visualisation.png)
+![](visualisation.png)
 
 When plotting data using Pandas dataframes, all the data requires no modification. Optionally for readability, you can add lables to call calumns by name as to index.
 
