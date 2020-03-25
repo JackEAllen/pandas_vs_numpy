@@ -10,6 +10,18 @@ from numpy import genfromtxt
 
 gem_df = pd.read_csv('GEM-Spectrum1.csv')
 gem_df.columns = ['X', 'Y', 'E']
+print(gem_df)
+
+mod_df = gem_df*2
+
+# print(mod_df)
+
+# gem_df.append(mod_df, ignore_index=True)
+
+gem_df.to_csv('data_frame.csv', index=False)
+
+# print(gem_df)
+# print(gem_df[gem_df.isna().any(axis=1)])
 
 
 # Rotate and + 1
@@ -45,27 +57,23 @@ y_axis = "high_2014"
 trace1 = go.Scatter(x=df[x_axis],
                     y=df[y_axis],
                     name="Pandas",
-                    line=dict(color="#f44242"),
                     opacity=0.7)
 
 # Using numpy array
 trace2 = go.Scatter(x=np_array[0],  # month
                     y=np_array[2],  # low_2000
                     name="Numpy",
-                    line=dict(color="#344EB5"))
-
+                    opacity=0.7)
 # Using pandas dataframe
 trace3 = go.Scatter(x=gem_df['X'],
                     y=gem_df['Y'],
                     name="Pandas",
-                    line=dict(color="#fc687e"),
                     opacity=0.7)
 
 # Using numpy array
 trace4 = go.Scatter(x=gem_np[0],
                     y=gem_np[1],
                     name="Numpy",
-                    line=dict(color="#4debac"),
                     opacity=0.7)
 
 # data to populate plots with                   
