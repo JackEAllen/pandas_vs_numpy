@@ -1,4 +1,4 @@
-# pandas_vs_numpy
+# plotly_as_django_webapp
 
 ## Desired Plotting format for line and scatter visualisations
 
